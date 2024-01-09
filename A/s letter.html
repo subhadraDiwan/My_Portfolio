@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animating an S Letter</title>
+  <style>
+    .matrix {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .matrix-row {
+      display: flex;
+    }
+
+    .matrix-col {
+      width: 30px;
+      height: 30px;
+      border: 1px solid black; /* For visualization */
+      animation: sway 3s ease-in-out infinite;
+    }
+
+    .mc-1 {
+      border-bottom-right-radius: 20px;
+    }
+
+    .mc-2 {
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+
+    .mc-3 {
+      border-top-left-radius: 20px;
+    }
+
+    .mc-4 {
+      border-bottom-right-radius: 20px;
+      transform: translateY(20px);
+    }
+
+    .mc-5 {
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      transform: translateY(20px);
+    }
+
+    .mc-6 {
+      border-top-left-radius: 20px;
+      transform: translateY(20px);
+    }
+
+    .mc-7 {
+      border-bottom-right-radius: 20px;
+      transform: translateY(40px);
+    }
+
+    .mc-8 {
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      transform: translateY(40px);
+    }
+
+    .mc-9 {
+      border-top-left-radius: 20px;
+      transform: translateY(40px);
+    }
+
+    @keyframes sway {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(5px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="matrix">
+    <div class="matrix-row">
+      <div class="matrix-col mc-1"></div>
+      <div class="matrix-col mc-2"></div>
+      <div class="matrix-col mc-3"></div>
+    </div>
+    <div class="matrix-row">
+      <div class="matrix-col mc-4"></div>
+      <div class="matrix-col mc-5"></div>
+      <div class="matrix-col mc-6"></div>
+    </div>
+    <div class="matrix-row">
+      <div class="matrix-col mc-7"></div>
+      <div class="matrix-col mc-8"></div>
+      <div class="matrix-col mc-9"></div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
